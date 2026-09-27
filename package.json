@@ -1,0 +1,43 @@
+{
+  "name": "quest-ledger",
+  "productName": "Quest Ledger",
+  "version": "1.0.0",
+  "description": "A game-style to-do app: complete quests, earn XP and gold, level up.",
+  "author": "Noamkatzman",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Noamkatzman/Quest-Ledger.git"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.questledger.app",
+    "productName": "Quest Ledger",
+    "files": [
+      "main.js",
+      "preload.js",
+      "app/**/*",
+      "build/icon.png"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icon.png"
+    },
+    "nsis": {
+      "oneClick": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "runAfterFinish": true,
+      "shortcutName": "Quest Ledger"
+    }
+  },
+  "devDependencies": {
+    "electron": "^44.4.5",
+    "electron-builder": "^26.15.3"
+  }
+}
