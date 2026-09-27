@@ -29,7 +29,7 @@
 
 ## Install
 
-1. Go to [Releases](../../releases/latest) and download `Quest Ledger Setup x.x.x.exe`.
+1. Go to [Releases](../../releases/latest) and download `QuestLedger-Setup-x.x.x.exe`.
 2. Run it. Quest Ledger installs and opens, and adds a shortcut to your desktop and Start menu.
 
 The installer isn't code-signed, so Windows may show **"Windows protected your PC"** the first time. Click **More info**, then **Run anyway**.
